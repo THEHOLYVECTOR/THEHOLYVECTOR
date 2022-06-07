@@ -1,0 +1,29 @@
+import java.util.*;
+public class code {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Welcome to the Mastermind");
+	
+	result();
+	}
+	
+	public static final String result() {
+		final String[] colours = {"R", "B", "Y", "G", "P", "O", "B", "W"};
+		String[] generatedPuzzleCode; {
+			Random generator =  new Random();
+			String result = "";
+			int index, numberOfSelections = 4;
+			String[] c = colours;
+			for(int i=0; i<numberOfSelections; i++)
+			{
+				index = generator.nextInt(c.length);
+				result += c[index];
+			}
+			return result;
+		
+
+	}
+
+}
+}
